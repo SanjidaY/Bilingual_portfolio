@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjida Yasmin | Data Engineer & Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <span class="logo-badge">SY</span>
+            <span class="brand-name">Sanjida Yasmin</span>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="cv-buttons">
+                <!-- Language Toggle Button -->
+                <button onclick="toggleLanguage()" class="btn-lang" id="langBtn">🌐 Deutsch</button>
+
+                <a href="https://github.com/SanjidaY/Sanjida-Yasmin_CV/raw/main/Sanjida_Yasmin_CV.pdf" target="_blank" class="btn-gradient">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                CV (EN)
+                </a>
+                <a href="https://github.com/SanjidaY/Sanjida-Yasmin_CV/raw/main/Sanjida_Yasmin_Lebenslauf.pdf" target="_blank" class="btn-gradient">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                CV (DE)
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge" data-i18n="hero_badge">Available for Projects & Roles</span>
+            <h1><span data-i18n="hero_hi">Hi, I'm</span> <span class="highlight">Sanjida Yasmin</span></h1>
+            <h2 data-i18n="hero_subtitle">Data Engineer, Researcher & Analyst</h2>
+            <p data-i18n="hero_desc">I architect scalable ETL pipelines, integrate enterprise data systems (SAP/MSSQL/Oracle), and build predictive machine learning models for industrial automation.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_proj">View Projects</a>
+                <a href="https://linkedin.com/in/yasmin-sanjida" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                <a href="mailto:sanji.jasmin@gmail.com" class="btn btn-secondary" data-i18n="hero_btn_email">Email Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2 class="section-title" data-i18n="about_title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p data-i18n="about_p1">I am a Data Engineer and Researcher based in Dresden, Germany, holding an M.Sc. in Distributed Systems Engineering from TU Dresden. My core expertise lies in designing robust data architectures, automating complex ETL workflows, and bridging legacy enterprise systems with modern cloud and analytical environments.</p>
+                <p data-i18n="about_p2">In my recent work at JOYNEXT GmbH and the Helmholtz-Zentrum Dresden, I have built automated pipelines orchestrating data flow between SAP SOAP Web Services, PostgreSQL, Oracle RDBMS, and MSSQL. Beyond core engineering, my research background in advanced analytics and machine learning (XGBoost, BERT) enables me to extract predictive insights from industrial IoT and PLC data, directly reducing production downtime.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title" data-i18n="skills_title">Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3 data-i18n="skill_1_title">Data Engineering & Pipelines</h3>
+                <p data-i18n="skill_1_desc">Python, Apache Airflow, ETL / ELT Workflows, Prefect, SAP SOAP Web Services Integration, XML/PAR Parsing Engines</p>
+            </div>
+            <div class="skill-card">
+                <h3 data-i18n="skill_2_title">Databases & DWH</h3>
+                <p data-i18n="skill_2_desc">Oracle (11g/19c), PL/SQL, Oracle APEX (Full Stack), PostgreSQL, Microsoft SQL Server (MSSQL), NoSQL</p>
+            </div>
+            <div class="skill-card">
+                <h3 data-i18n="skill_3_title">Analytics & Machine Learning</h3>
+                <p data-i18n="skill_3_desc">PySpark, Scikit-learn, XGBoost, BERT, TensorFlow, PyTorch, Focal Loss handling for High Cardinality</p>
+            </div>
+            <div class="skill-card">
+                <h3 data-i18n="skill_4_title">DevOps, Tools & Domain</h3>
+                <p data-i18n="skill_4_desc">Docker, CI/CD, Kubernetes, Grafana, Linux, Git/GitLab, SVN, Automotive SPICE 3.1, OWASP Top 10, TARA</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title" data-i18n="proj_title">Key Projects & Research</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 data-i18n="proj_1_title">Predictive Fault Detection Engine (Master Thesis)</h3>
+                    <p data-i18n="proj_1_desc">Developed a supervised multi-class classification system at JOYNEXT using multimodal industrial data (PLC messages & operator logs) to predict maintenance actions and reduce downtime. Achieved 96.87% Precision@5 using a hybrid BERT model and focal loss across 1,628 classes.</p>
+                    <div class="tags">
+                        <span>Python</span><span>BERT</span><span>XGBoost</span><span>PLC Data</span><span>PySpark</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 data-i18n="proj_2_title">Automated SAP-MSSQL BOM Synchronization</h3>
+                    <p data-i18n="proj_2_desc">Designed and orchestrated automated ETL pipelines using Apache Airflow and Python to synchronize critical Bill of Materials (BOM) data between SAP (via SOAP Web Services) and MSSQL production databases, ensuring seamless manufacturing operations.</p>
+                    <div class="tags">
+                        <span>Apache Airflow</span><span>Python</span><span>SAP Web Services</span><span>MSSQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 data-i18n="proj_3_title">Repository Migration & Middleware ETL</h3>
+                    <p data-i18n="proj_3_desc">Architected an end-to-end data migration workflow transitioning complex repository data from SVN to MSSQL. Implemented PostgreSQL as a high-performance middleware database for intermediate data transformation and cleansing.</p>
+                    <div class="tags">
+                        <span>PostgreSQL</span><span>MSSQL</span><span>ETL</span><span>SVN</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 data-i18n="proj_4_title">High-Performance Oracle PL/SQL API</h3>
+                    <p data-i18n="proj_4_desc">Developed an optimized Oracle PL/SQL database interface at Helmholtz-Zentrum Dresden focusing on query execution speed, data security, and usability. Conducted cross-platform testing and debugging using C++/Qt applications.</p>
+                    <div class="tags">
+                        <span>Oracle PL/SQL</span><span>C++ / Qt</span><span>GitLab</span><span>API Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title" data-i18n="exp_title">Professional Experience</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 data-i18n="exp_1_title">Data Engineer (Part-time)</h3>
+                    <p><strong data-i18n="exp_1_sub">JOYNEXT GmbH | May 2022 – Present | Dresden, Germany</strong><br><br>
+                    <span data-i18n="exp_1_desc">• Built automated Airflow ETL pipelines syncing SAP SOAP Web Services with MSSQL databases.<br>• Developed a parsing engine for XML/PAR files to extract test limits and deploy parameters via stored procedures.<br>• Implemented Prefect workflows to synchronize Git scripts and automate remote server executions.<br>• Managed daily automated uploads of critical configuration files to SAP servers.</span></p>
+                    <div class="tags">
+                        <span>Airflow</span><span>Python</span><span>SAP</span><span>Prefect</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 data-i18n="exp_2_title">Research Assistant – DB Interface</h3>
+                    <p><strong data-i18n="exp_2_sub">Helmholtz-Zentrum Dresden | Dec 2021 – Mar 2022 | Germany</strong><br><br>
+                    <span data-i18n="exp_2_desc">• Developed optimized Oracle PL/SQL interfaces prioritizing query speed and data security.<br>• Executed cross-platform API testing and debugging using web tools and C++/Qt applications.<br>• Managed version control via Git/GitLab and established long-term system documentation.</span></p>
+                    <div class="tags">
+                        <span>Oracle Database</span><span>PL/SQL</span><span>C++</span><span>Linux</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 data-i18n="exp_3_title">Junior Oracle Developer</h3>
+                    <p><strong data-i18n="exp_3_sub">UOCBD & R-creation | Nov 2018 – Sep 2020 | Bangladesh</strong><br><br>
+                    <span data-i18n="exp_3_desc">• Developed full-stack enterprise web modules using Oracle APEX for responsive frontends.<br>• Engineered robust backend processing and database architecture using Oracle PL/SQL.<br>• Collaborated directly with clients for requirement gathering and technical specification design.</span></p>
+                    <div class="tags">
+                        <span>Oracle APEX</span><span>Oracle 11g/19c</span><span>PL/SQL</span><span>Full Stack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+        <p data-i18n="contact_desc">Currently seeking full-time opportunities in Data Engineering, Data Analytics, or Software Quality Engineering in Germany (Remote / Hybrid / On-site in Germany).</p>
+        <div class="contact-links">
+            <a href="mailto:sanji.jasmin@gmail.com" class="btn btn-primary">sanji.jasmin@gmail.com</a>
+            <a href="https://linkedin.com/in/yasmin-sanjida" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
+            <a href="tel:+4917645674958" class="btn btn-secondary">+49 176 4567 4958</a>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer_text">&copy; 2026 Sanjida Yasmin. Built with Docker & Nginx on Proxmox | Dresden, Germany.</p>
+    </footer>
+
+    <!-- JavaScript Translation Engine -->
+    <script>
+        const translations = {
+            en: {
+                nav_about: "About", nav_skills: "Skills", nav_projects: "Projects", nav_exp: "Experience", nav_contact: "Contact",
+                hero_badge: "Available for Projects & Roles", hero_hi: "Hi, I'm", hero_subtitle: "Data Engineer, Researcher & Analyst",
+                hero_desc: "I architect scalable ETL pipelines, integrate enterprise data systems (SAP/MSSQL/Oracle), and build predictive machine learning models for industrial automation.",
+                hero_btn_proj: "View Projects", hero_btn_email: "Email Me",
+                about_title: "About Me",
+                about_p1: "I am a Data Engineer and Researcher based in Dresden, Germany, holding an M.Sc. in Distributed Systems Engineering from TU Dresden. My core expertise lies in designing robust data architectures, automating complex ETL workflows, and bridging legacy enterprise systems with modern cloud and analytical environments.",
+                about_p2: "In my recent work at JOYNEXT GmbH and the Helmholtz-Zentrum Dresden, I have built automated pipelines orchestrating data flow between SAP SOAP Web Services, PostgreSQL, Oracle RDBMS, and MSSQL. Beyond core engineering, my research background in advanced analytics and machine learning (XGBoost, BERT) enables me to extract predictive insights from industrial IoT and PLC data, directly reducing production downtime.",
+                skills_title: "Technical Expertise",
+                skill_1_title: "Data Engineering & Pipelines", skill_1_desc: "Python, Apache Airflow, ETL / ELT Workflows, Prefect, SAP SOAP Web Services Integration, XML/PAR Parsing Engines",
+                skill_2_title: "Databases & DWH", skill_2_desc: "Oracle (11g/19c), PL/SQL, Oracle APEX (Full Stack), PostgreSQL, Microsoft SQL Server (MSSQL), NoSQL",
+                skill_3_title: "Analytics & Machine Learning", skill_3_desc: "PySpark, Scikit-learn, XGBoost, BERT, TensorFlow, PyTorch, Focal Loss handling for High Cardinality",
+                skill_4_title: "DevOps, Tools & Domain", skill_4_desc: "Docker, CI/CD, Kubernetes, Grafana, Linux, Git/GitLab, SVN, Automotive SPICE 3.1, OWASP Top 10, TARA",
+                proj_title: "Key Projects & Research",
+                proj_1_title: "Predictive Fault Detection Engine (Master Thesis)", proj_1_desc: "Developed a supervised multi-class classification system at JOYNEXT using multimodal industrial data (PLC messages & operator logs) to predict maintenance actions and reduce downtime. Achieved 96.87% Precision@5 using a hybrid BERT model and focal loss across 1,628 classes.",
+                proj_2_title: "Automated SAP-MSSQL BOM Synchronization", proj_2_desc: "Designed and orchestrated automated ETL pipelines using Apache Airflow and Python to synchronize critical Bill of Materials (BOM) data between SAP (via SOAP Web Services) and MSSQL production databases, ensuring seamless manufacturing operations.",
+                proj_3_title: "Repository Migration & Middleware ETL", proj_3_desc: "Architected an end-to-end data migration workflow transitioning complex repository data from SVN to MSSQL. Implemented PostgreSQL as a high-performance middleware database for intermediate data transformation and cleansing.",
+                proj_4_title: "High-Performance Oracle PL/SQL API", proj_4_desc: "Developed an optimized Oracle PL/SQL database interface at Helmholtz-Zentrum Dresden focusing on query execution speed, data security, and usability. Conducted cross-platform testing and debugging using C++/Qt applications.",
+                exp_title: "Professional Experience",
+                exp_1_title: "Data Engineer (Part-time)", exp_1_sub: "JOYNEXT GmbH | May 2022 – Present | Dresden, Germany",
+                exp_1_desc: "• Built automated Airflow ETL pipelines syncing SAP SOAP Web Services with MSSQL databases.<br>• Developed a parsing engine for XML/PAR files to extract test limits and deploy parameters via stored procedures.<br>• Implemented Prefect workflows to synchronize Git scripts and automate remote server executions.<br>• Managed daily automated uploads of critical configuration files to SAP servers.",
+                exp_2_title: "Research Assistant – DB Interface", exp_2_sub: "Helmholtz-Zentrum Dresden | Dec 2021 – Mar 2022 | Germany",
+                exp_2_desc: "• Developed optimized Oracle PL/SQL interfaces prioritizing query speed and data security.<br>• Executed cross-platform API testing and debugging using web tools and C++/Qt applications.<br>• Managed version control via Git/GitLab and established long-term system documentation.",
+                exp_3_title: "Junior Oracle Developer", exp_3_sub: "UOCBD & R-creation | Nov 2018 – Sep 2020 | Bangladesh",
+                exp_3_desc: "• Developed full-stack enterprise web modules using Oracle APEX for responsive frontends.<br>• Engineered robust backend processing and database architecture using Oracle PL/SQL.<br>• Collaborated directly with clients for requirement gathering and technical specification design.",
+                contact_title: "Get In Touch", contact_desc: "Currently seeking full-time opportunities in Data Engineering, Data Analytics, or Software Quality Engineering in Germany (Remote / Hybrid / On-site in Germany).",
+                footer_text: "&copy; 2026 Sanjida Yasmin. Built with Docker & Nginx on Proxmox | Dresden, Germany."
+            },
+            de: {
+                nav_about: "Über mich", nav_skills: "Kompetenzen", nav_projects: "Projekte", nav_exp: "Erfahrung", nav_contact: "Kontakt",
+                hero_badge: "Verfügbar für Projekte & Festanstellung", hero_hi: "Hi, ich bin", hero_subtitle: "Data Engineerin, Forscherin & Analystin",
+                hero_desc: "Ich entwickle skalierbare ETL-Pipelines, integriere Unternehmensdatensysteme (SAP/MSSQL/Oracle) und erstelle präventive Machine-Learning-Modelle für die Industrieautomation.",
+                hero_btn_proj: "Projekte ansehen", hero_btn_email: "E-Mail schreiben",
+                about_title: "Über mich",
+                about_p1: "Ich bin eine Data Engineerin und Forscherin aus Dresden mit einem M.Sc. in Distributed Systems Engineering der TU Dresden. Meine Kernkompetenz liegt im Entwurf robuster Datenarchitekturen, der Automatisierung komplexer ETL-Workflows und der Verbindung von Legacy-Systemen mit modernen Cloud- und Analyseumgebungen.",
+                about_p2: "In meiner jüngsten Tätigkeit bei der JOYNEXT GmbH und dem Helmholtz-Zentrum Dresden habe ich automatisierte Pipelines aufgebaut, die den Datenfluss zwischen SAP SOAP-Webservices, PostgreSQL, Oracle RDBMS und MSSQL steuern. Darüber hinaus ermöglicht mir mein Forschungshintergrund in Advanced Analytics und Machine Learning (XGBoost, BERT), präzise Vorhersagen aus industriellen IoT- und SPS-Daten zu generieren, um Produktionsausfälle messbar zu reduzieren.",
+                skills_title: "Technische Kompetenzen",
+                skill_1_title: "Data Engineering & Pipelines", skill_1_desc: "Python, Apache Airflow, ETL / ELT Workflows, Prefect, SAP SOAP Webservices-Integration, XML/PAR Parsing-Engines",
+                skill_2_title: "Datenbanken & DWH", skill_2_desc: "Oracle (11g/19c), PL/SQL, Oracle APEX (Full Stack), PostgreSQL, Microsoft SQL Server (MSSQL), NoSQL",
+                skill_3_title: "Analytik & Machine Learning", skill_3_desc: "PySpark, Scikit-learn, XGBoost, BERT, TensorFlow, PyTorch, Focal Loss zur Behandlung hoher Kardinalität",
+                skill_4_title: "DevOps, Tools & Methoden", skill_4_desc: "Docker, CI/CD, Kubernetes, Grafana, Linux, Git/GitLab, SVN, Automotive SPICE 3.1, OWASP Top 10, TARA",
+                proj_title: "Key Projekte & Forschung",
+                proj_1_title: "Prädiktive Fehlererkennung (Masterarbeit)", proj_1_desc: "Entwicklung eines überwachten Multiklassen-Klassifikationssystems bei JOYNEXT unter Verwendung multimodaler Industriedaten (SPS-Protokolle & manuelle Textprotokolle) zur Vorhersage von Wartungsmaßnahmen. Erzielung einer Precision@5 von 96,87 % mittels eines hybriden BERT-Modells über 1.628 Klassen.",
+                proj_2_title: "Automatisierte SAP-MSSQL Stücklisten-Synchronisation", proj_2_desc: "Entwurf und Orchestrierung automatisierter ETL-Pipelines mittels Apache Airflow und Python zur Synchronisation kritischer Stücklisten (BOM) zwischen SAP (SOAP-Webservices) und MSSQL-Produktionsdatenbanken.",
+                proj_3_title: "Repository-Migration & Middleware-ETL", proj_3_desc: "Entwicklung eines End-to-End-Workflows zur Migration von Repository-Daten von SVN zu MSSQL unter Nutzung von PostgreSQL als leistungsstarke Middleware-Datenbank für Zwischenschritte und Datentransformation.",
+                proj_4_title: "Hochperformante Oracle PL/SQL API", proj_4_desc: "Entwicklung einer optimierten Oracle PL/SQL-Datenbankschnittstelle am Helmholtz-Zentrum Dresden mit Fokus auf Abfragegeschwindigkeit und Datensicherheit. Durchführung plattformübergreifender Tests mittels C++/Qt-Anwendungen.",
+                exp_title: "Berufserfahrung",
+                exp_1_title: "Data Engineerin (Teilzeit)", exp_1_sub: "JOYNEXT GmbH | Mai 2022 – Heute | Dresden, Deutschland",
+                exp_1_desc: "• Entwurf automatisierter Airflow ETL-Pipelines zur Synchronisation von SAP SOAP-Webservices mit MSSQL.<br>• Entwicklung einer Parsing-Engine für XML/PAR-Dateien zum Extrahieren von Testgrenzwerten via Stored Procedures.<br>• Implementierung von Prefect-Workflows zur Synchronisation von Skripten aus Git und Ausführung auf Remote-Servern.<br>• Verwaltung der täglichen Generierung und des Uploads kritischer Konfigurationsdateien auf SAP-Server.",
+                exp_2_title: "Wissenschaftliche Mitarbeiterin – DB-Schnittstelle", exp_2_sub: "Helmholtz-Zentrum Dresden | Dez. 2021 – März 2022 | Deutschland",
+                exp_2_desc: "• Entwicklung einer optimierten Oracle PL/SQL-Schnittstelle mit Fokus auf Abfragetempo und Datensicherheit.<br>• Durchführung plattformübergreifender Tests und Debugging mittels C++/Qt-Anwendungen.<br>• Verwaltung von Repositories über Git/GitLab sowie Erstellung einer langfristigen Systemdokumentation.",
+                exp_3_title: "Junior Oracle Entwicklerin", exp_3_sub: "UOCBD & R-creation | Nov. 2018 – Sep. 2020 | Bangladesch",
+                exp_3_desc: "• Entwicklung von Full-Stack-Webmodulen unter Verwendung von Oracle APEX für das Frontend.<br>• Programmierung robuster Backend-Verarbeitung und Datenbankstrukturen mit Oracle PL/SQL.<br>• Direkte Zusammenarbeit mit Kunden zur Anforderungserhebung und technischen Spezifikation.",
+                contact_title: "Kontakt aufnehmen", contact_desc: "Aktuell auf der Suche nach einer Vollzeitstelle als Data Engineerin, Data Analystin oder Software Quality Engineerin in Deutschland (Remote / Hybrid / Vor Ort in Deutschland).",
+                footer_text: "&copy; 2026 Sanjida Yasmin. Erstellt mit Docker & Nginx auf Proxmox | Dresden, Deutschland."
+            }
+        };
+
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'de' : 'en';
+
+            // Update button text
+            const langBtn = document.getElementById('langBtn');
+            langBtn.innerHTML = currentLang === 'en' ? '🌐 Deutsch' : '🌐 English';
+
+            // Update HTML language attribute
+            document.documentElement.lang = currentLang;
+
+            // Swap all translated texts
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    element.innerHTML = translations[currentLang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
