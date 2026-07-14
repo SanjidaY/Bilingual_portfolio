@@ -25,7 +25,7 @@ body {
 }
 
 /* ==========================================
-   NAVBAR (Updated with Gradient Badge & CV Buttons)
+   NAVBAR (Updated to prevent word wrapping)
 ========================================== */
 .navbar {
     display: flex;
@@ -125,6 +125,7 @@ body {
     color: #ffffff;
 }
 
+/* Language Toggle Button */
 .btn-lang {
     background: transparent;
     color: var(--text-primary);
@@ -352,6 +353,150 @@ body {
 }
 
 /* ==========================================
+   VERTICAL TIMELINE (Experience Section)
+========================================== */
+.timeline {
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* The vertical purple line in the center */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: var(--gradient-brand);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+/* The Glowing Purple Nodes on the Line */
+.timeline-dot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: var(--bg-primary);
+    border: 3px solid #ec4899;
+    border-radius: 50%;
+    top: 32px;
+    z-index: 10;
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
+    transition: all 0.3s ease;
+}
+
+.timeline-item.left .timeline-dot {
+    right: -9px;
+}
+
+.timeline-item.right .timeline-dot {
+    left: -9px;
+}
+
+.timeline-item:hover .timeline-dot {
+    background: #ec4899;
+    transform: scale(1.2);
+    box-shadow: 0 0 18px rgba(236, 72, 153, 0.9);
+}
+
+/* Card Content Styling */
+.timeline-content {
+    background: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item:hover .timeline-content {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+    box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.25);
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+/* Meta Info (Company & Location) */
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.6rem;
+}
+
+.meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Purple Date Accent */
+.job-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #ec4899;
+    margin-bottom: 1.2rem;
+}
+
+/* Custom Purple Dot Bullets */
+.job-bullets {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.job-bullets li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.job-bullets li::last-child {
+    margin-bottom: 0;
+}
+
+.job-bullets li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #a855f7;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+/* ==========================================
    CONTACT SECTION & FOOTER
 ========================================== */
 .contact-section {
@@ -404,6 +549,7 @@ footer {
     .cv-buttons {
         width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero h1 {
@@ -428,26 +574,26 @@ footer {
     .btn {
         width: 100%;
     }
-}
-/* Language Toggle Button */
-.btn-lang {
-    background: transparent;
-    color: var(--text-primary);
-    border: 1px solid #475569;
-    padding: 0.5rem 0.9rem;
-    border-radius: 10px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-}
 
-.btn-lang:hover {
-    border-color: var(--accent-cyan);
-    color: var(--accent-cyan);
-    background: rgba(56, 189, 248, 0.08);
-    transform: translateY(-1px);
+    /* Move timeline line to the left edge on small screens */
+    .timeline::after {
+        left: 20px;
+    }
+
+    /* Make all cards 100% width and sit on the right side of the line */
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+
+    .timeline-item.right {
+        left: 0;
+    }
+
+    /* Align all glowing dots to the left line */
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot {
+        left: 11px;
+    }
 }
