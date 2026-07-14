@@ -9,3 +9,8 @@ services:
       - "8080:80"
     environment:
       - TZ=Europe/Berlin
+  my-tunnel:
+      image: cloudflare/cloudflared:latest
+      container_name: sanjida_tunnel
+      restart: always
+      command: tunnel --no-autoupdate run --token eyJhIjoiZGM0M2Y1MjQ0OWYzYWJjODMyZmE0ZmZmODZlNWE5ZWQiLCJ0IjoiNzU1ZDBmMDMtMTM0ZC00ZDMzLWI1YzEtMzZjM2UyZDk2OGVkIiwicyI6IlltVTNNRFJqT1RJdE16STFPUzAwTURJMExUZzJNall0TkRFMU9XVXhOekZoTmpRMyJ9
